@@ -1,0 +1,506 @@
+@import url('https://fonts.google.com/specimen/Varela');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+* {
+    /* background-color: rgb(0, 0, 33); */
+    /* margin: 0; */
+    padding: 0;
+}
+
+
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #212121;
+    
+}
+
+body{
+    background-color: var(--primary-color)
+}
+
+.dark-mode {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.logo {
+
+    color: blueviolet;
+    margin-left: 2px;
+    font-size: 1.5rem;
+    font-family: "Dancing Script", Cursive;
+    font-weight: 400;
+    /* background-color: var(--navcolor); */
+}
+
+.logo h1 {
+    /* background-color: var(--navcolor); */
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: poppins;
+    height: 15vh;
+    /* background-color: var(--navcolor); */
+    width: 100vw;
+    z-index: 99;
+    border-bottom: 1px solid grey;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: blueviolet;
+    font-family: poppins;
+    /* background-color: var(--primary-color); */
+    z-index: 99;
+}
+
+nav ul li {
+    margin: 0px 40px;
+    color: blueviolet;
+    /* background-color: var(--primary-color); */
+    z-index: 99;
+}
+
+nav ul li a {
+    color: blueviolet;
+    text-decoration: blueviolet;
+    /* background-color: var(--primary-color); */
+    z-index: 99;
+}
+
+nav ul li a:hover {
+    color: rgb(126, 126, 201);
+    font-size: 1.01rem;
+}
+
+
+
+
+
+.download {
+    text-transform: lowercase;
+    background-color: blueviolet;
+    color: var(--primary-color);
+    height: 5vh;
+    font-family: poppins;
+    padding: 2px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+    font-weight: 600;
+    box-shadow: 2px 2px 2px #21212141, inset 2px 2px 2px #ffffff59;
+
+}
+
+.download:hover {
+    transition: linear 0.1s;
+    scale: 1.03;
+    
+}
+
+.github-btn{
+    text-transform: lowercase;
+    /* background-color: var(--primary-color); */
+    color: #8a2be2;
+    height: 5vh;
+    font-family: poppins;
+    padding: 2px 8px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #21212141, inset 2px 2px 2px #ffffff59;
+    border: 1px solid blueviolet;
+    font-weight: 600;
+}
+
+
+.github-btn:hover {
+    transition: linear 0.1s;
+    scale: 1.03;
+    
+}
+
+
+
+#home {
+    height: 100vh;
+    width: 100%;
+    /* background-color: var(--primary-color); */
+}
+
+/* controls the whole section of the first page  */
+
+.firstsection {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/* controls the text part of website */
+
+.leftsection {
+    /* background-color: red; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    font-size: 3rem;
+    margin: 60px 60px;
+}
+
+/* controls the right part of website  */
+
+.rightsection {
+    /* background-color: red; */
+    width: 50%;
+}
+
+.rightsection img {
+    width: 70%;
+    margin: 50px 0px;
+    margin-left: 50px;
+}
+
+.purple {
+    color: rgb(149, 74, 219);
+}
+
+#down-btn {
+    position: absolute;
+    margin-top: 40%;
+    animation: exampleAnimation 1s infinite;
+}
+
+@keyframes exampleAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* modify about section */
+
+.secondsection {
+    height: 100vh;
+    width: 100vw;
+    position: static;
+    /* background-color: var(--primary-color); */
+}
+
+#title-about {
+    /* border: 2px solid red; */
+    height: 10vh;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: poppins;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+#about-desc {
+    /* border: 8px solid green; */
+    height: 40vh;
+    width: 25%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* color: var(--primary-color); */
+}
+
+
+#about-desc img {
+    margin-top: 40%;
+    margin-left: 5%;
+    height: 80%;
+    border-radius: 50%;
+    /* border: 1px var(--primary-color); */
+    box-shadow: 2px 2px 30px blueviolet;
+
+
+}
+
+#about-info {
+    display: flex;
+    background-color: blueviolet;
+    height: 30vh;
+    width: 50vw;
+    /* border: 6px solid yellow; */
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-left: 25%;
+    margin-top: -16%;
+    margin-bottom: 10vh;
+    border-radius: 50px;
+    padding: 35px;
+    line-height: 25px;
+}
+
+#about-info-desc {
+    margin-top: 5px;
+    background-color: blueviolet;
+}
+
+
+
+
+hr {
+    color: grey;
+    width: 95vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+
+/* education  */
+
+.education {
+    color: var(--primary-color);
+    text-align: center;
+    border-radius: 50px;
+    width: 40%;
+    font-family: poppins;
+    margin-left: 30%;
+    background-color: #8a2be2;
+    margin-top: 10vh;
+    line-height: 15px;
+    /* background-color: var(--primary-color); */
+}
+
+
+.educationtitle {
+    text-decoration: underline;
+
+}
+
+/* modify skills section */
+
+.skills {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: var(--primary-color); */
+}
+
+#title-skills {
+    height: 20vh;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: poppins;
+    text-transform: uppercase;
+}
+
+.skills-title{
+
+    color:#8a2be2;
+    font-family: poppins;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.skills-container{
+    
+    position: relative;
+    left: 20%;
+    height: 60%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.skills-container img{
+
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.skills-container img:hover{
+
+    transition: 0.3s;
+   transform: scale(1.23);
+   cursor: pointer;
+   justify-content: center;
+   align-items: center;
+}
+
+/* .container{
+    border: 2px solid red;
+    height: 60%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: center; */
+    position: relative;
+    left: 20%;
+} */
+
+
+/* contact section  */
+
+.fourthsection{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: var(--primary-color); */
+}
+
+.contact-title{
+    color: blueviolet;
+    text-align: center;
+    font-family: poppins;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.left-right-container{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 5%;
+}
+
+/* contact left section  */
+
+.left-contact{
+    margin-top: 5%;
+    padding: 10px 50px;
+    width: 40%;
+    height: 60vh;
+    background-color: #9e5cdb;
+    color: var(--primary-color);
+    box-shadow: 1px 2px 20px grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+#contact-name{
+    height: 5%;
+    border-radius: 5px;
+    border: none;
+}
+
+#contact-email{
+    height: 5%;
+    border-radius: 5px;
+    border: none;
+}
+#contact-message{
+    height: 40%;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+
+
+}
+
+#submit-btn{
+
+    background-color: var(--primary-color);
+    color: #9e5cdb;
+    margin-top: 10px;
+    margin-left: 40%;
+    width: 20%;
+    height: 10%;
+    font-family: poppins;
+    padding: 2px 8px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+
+}
+
+
+
+/* contact right section  */
+
+.right-contact{
+    width: 40%;
+    height: 50vh;
+    border: 2px solid grey;
+    background-color:#9e5cdb;
+    color: var(--primary-color);
+    font-family: poppins;
+    margin-top: 7%;
+    padding: 10px 50px;
+    box-shadow: 1px 2px 20px grey;
+    border-radius: 10px;
+
+}
+
+#email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#contact-links{
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .firstsection {
+        flex-direction: column;
+    }
+}

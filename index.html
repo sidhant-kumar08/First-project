@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div>
+
+        <nav data-aos="fade-down">
+            <div class="logo">
+                <h1>
+                    SIDHANT KUMAR
+                </h1>
+            </div>
+
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#secondsection">About</a></li>
+                    <li><a href="#thirdsection">Skills</a></li>
+                    <li><a href="">Contact</a></li>
+                    <img class="dark-mode-btn" onclick="ToggleEvent" width="48" height="48"
+                        src="https://img.icons8.com/sf-regular-filled/48/moon-symbol.png" alt="moon-symbol" />
+                </ul>
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <section class="firstsection" id="home">
+        <div class="leftsection" data-aos="fade-right">
+            <div>Hi, My Name is <span class="purple">SIDHANT</span></div>
+            <div> and I am a Passionate <div><span id="element" class="purple"></span></div>
+            </div>
+            <div class="button">
+                <button id="downloadbtn" class="download">Resume</button>
+                <a href="https://github.com/sidhant-kumar08" target="_blank"><button id="github-btn"
+                        class="github-btn">visit github</button></a>
+            </div>
+
+
+        </div>
+        <div class="rightsection" data-aos="fade-left">
+            <img src="/images/bg.png" alt="">
+        </div>
+        <a data-aos="fade-down" id="down-btn" href="#secondsection"><img width="50" height="50"
+                src="https://img.icons8.com/ios/50/circled-down-2.png" alt="down-squared--v2" /></a>
+    </section>
+
+
+    <hr>
+
+    <section class="secondsection" id="secondsection">
+
+        <div class="about">
+
+            <div id="title-about" data-aos="fade-down">
+                <h1>About Me</h1>
+            </div>
+            <div id="about-desc" data-aos="fade-right">
+                <img src="/images/Me.jpg" alt="image">
+            </div>
+
+            <div id="about-info" data-aos="fade-left">
+                <p id="about-info-desc">Hi, I'm Sidhant, a Full Stack Developer. I specialize in designing and
+                    implementing robust web applications, proficient in a range of front-end and back-end technologies,
+                    including HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB. I'm dedicated to delivering
+                    high-quality, scalable solutions that align seamlessly with client objectives. Actively engaged in
+                    continuous professional development to stay at the forefront of evolving industry standards.</p>
+
+            </div>
+            <div class="education" data-aos="fade-up">
+                <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/education.png" alt="education" />
+                <div class="educationtitle" id="bgc">
+                    <h2>EDUCATION</h2>
+                </div>
+                <div class="education-info">
+                    <h4>B.C.A( Bachelor's Of Computer Application )</h4>
+                    <h6>M.D.U Rohtak</h6>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <hr>
+
+
+    </section>
+
+    <section class="thirdsection" id="thirdsection">
+        <div class="skills">
+            <div class="skills-title" data-aos="fade-down">
+                <h1>Skills</h1>
+            </div>
+
+            <div class="skills-container" data-aos="fade-up">
+                <img src="/images/C++.png" alt="skills-img">
+                <img src="/images/HTML.png" alt="skills-img">
+                <img src="/images/CSS.png" alt="skills-img">
+                <img src="/images/JS.png" alt="skills-img">
+                <img src="/images/Tailwind.png" alt="skills-img">
+                <img src="/images/React.png" alt="skills-img">
+                <img src="/images/express.js.png" alt="skills-img">
+                <img src="/images/mongodb.js.png" alt="skills-img">
+                <img src="/images/node.js.png" alt="skills-img">
+            </div>
+
+        </div>
+
+    </section>
+    <hr>
+
+    <section class="fourthsection" id="fourthsection">
+        <div class="contact">
+            <div id="contact-container">
+                <div class="contact-title" data-aos="fade-down">
+                    <h1>CONTACT</h1>
+                </div>
+                <div class="left-right-container">
+
+                    <div class="left-contact" data-aos="fade-right">
+
+
+
+                        <label for="contact-name">Your Name:</label>
+                        <input type="text" id="contact-name">
+
+
+
+                        <label for="contact-email">Your Email:</label>
+                        <input type="text" id="contact-email">
+
+
+
+                        <label for="contact-name">Your Message:</label>
+                        <input type="text" id="contact-message">
+
+                        <button type="submit" id="submit-btn">SUBMIT</button>
+
+
+
+                    </div>
+
+                    <div class="right-contact" data-aos="fade-left">
+                        <div id="email">
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/new-post.png"
+                                alt="new-post" />
+                            <h5>contactsidhant08@gmail.com</h5>
+                        </div>
+
+                        <div id="number">
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/phone--v1.png"
+                                alt="phone--v1" />
+                            <h5>+91 8376095370</h5>
+                        </div>
+
+                        <div id="location">
+                            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/marker--v1.png"
+                                alt="marker--v1" />
+                            <h5>New Delhi,India</h5>
+                        </div>
+
+                        <div id="contact-links">
+                            <h3>CONTACT LINKS:</h3>
+                            <a href="https://www.linkedin.com/in/sidhant08"><img src="/images/linkedin.png"
+                                    alt="linkedin"></a>
+                            <a href="https://contactsidhant08@gmail.com"><img src="/images/gmail.png" alt="gmail"></a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer.', 'Web Developer.', 'FullStack Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
