@@ -1,16 +1,11 @@
-let btn = document.querySelector(".download");
-
-btn.addEventListener('click', ()=>{
-    alert("resume downloaded");
-} )
 
 
-const dark = document.querySelector('.dark-mode-btn')
-
-function toggleDarkMode() {
-    const body = document.body;
-    body.classList.toggle('dark-mode');
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
 }
 
-
-dark.addEventListener('click',toggleDarkMode())
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+}
