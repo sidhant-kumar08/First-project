@@ -676,7 +676,26 @@ hr {
         width: 200px;
         height: 350px;
     }
+
+    #about-desc{
+        position: relative;
+        left: 25%;
+
+    }
+
+    #about-info{
+        position: relative;
+        left: -6%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 175px;
+    }
     
+    #about-info p{
+        position: relative;
+        top: -11%;
+        scale: 0.4;
+    }
 }
 
 @media (min-width: 400px) {
